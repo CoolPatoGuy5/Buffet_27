@@ -5,7 +5,9 @@ joe = 5
 print("joe")
 print("joe is now 5")
 
-cout << "python is pretty cool"
+count = "python is pretty cool"
 sue = "python rocks!"
-print (sue + n + sue)
+print (count)
+print (sue)
+print (sue)
 print (sue)
