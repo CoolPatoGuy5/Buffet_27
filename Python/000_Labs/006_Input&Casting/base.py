@@ -1,5 +1,4 @@
 x = int(input("Please input a number."))
 y = int(input("Please input a second number"))
 z = int(x * y)
-print(str(x) + "*" + str(y))
-print("equals " + str(z))
+print(str(x) + "*" + str(y) + " equals " + str(z))
