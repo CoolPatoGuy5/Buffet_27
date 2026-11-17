@@ -10,3 +10,21 @@ joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religio
 # joke["setup"] -> References the String of the setup of the joke
 # joke["delivery"] -> References the String of the delivery part of the joke
 
+num = int(input("How many jokes would you like?: "))
+type = input("What type of joke would you like? (Single/double): ")
+
+if type == "single":
+    for i in range(0, num):
+        joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single")
+        print(joke["joke"])
+        print()
+
+elif type == "double":
+    for i in range(0, num):
+        joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart")
+        print(joke["setup"])
+        print(joke["delivery"])
+        print()
+
+else:
+    print("Wat")

@@ -14,10 +14,6 @@ class starter {
 		System.out.println("Box star");
 		System.out.println("Please enter an integer for the box width.");
 		int width = sc.nextInt();
-		System.out.println("Please enter an integer for the box height.");
-		int height = sc.nextInt();
-
-		int count = 0;
 		while(count != height){
 
 			int y = 0;
@@ -29,7 +25,11 @@ class starter {
 		}
 		System.out.println();
 		count++;
-		}
+		}	System.out.println("Please enter an integer for the box height.");
+		int height = sc.nextInt();
+
+		int count = 0;
+	
 
 	}
 }
